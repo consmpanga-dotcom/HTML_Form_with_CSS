@@ -1,0 +1,117 @@
+/* Reset defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Page background */
+body {
+  background: linear-gradient(135deg, #92e6a7, #52b788);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container */
+.container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 500px;
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #2d6a4f;
+}
+
+/* Labels and inputs */
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 1rem;
+  color: #081c15;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 0.3rem;
+  border: 2px solid #b7e4c7;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  background-color: #f0fdf4;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #2d6a4f;
+  background-color: #e9f5ec;
+}
+
+/* Groups */
+.radio-group, .checkbox-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 0.5rem;
+}
+
+/* Buttons */
+button {
+  margin-top: 1.5rem;
+  width: 48%;
+  padding: 10px;
+  background: #40916c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #1b4332;
+}
+
+button[type="reset"] {
+  background: #e5383b;
+}
+
+button[type="reset"]:hover {
+  background: #a4161a;
+}
+
+/* Results page */
+.results {
+  text-align: center;
+}
+
+.results ul {
+  list-style: none;
+  margin-top: 1rem;
+  color: #1b4332;
+  text-align: left;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 1rem;
+  text-decoration: none;
+  background: #52b788;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.back-link:hover {
+  background: #2d6a4f;
+}

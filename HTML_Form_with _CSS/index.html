@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Information Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>User Information Form</h1>
+
+    <form id="userForm">
+      <!-- Text Inputs -->
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" name="fname" required>
+
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" name="lname" required>
+
+      <!-- Email -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+      <!-- Password -->
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password">
+
+      <!-- Date -->
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob">
+
+      <!-- Number -->
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" min="0" max="120">
+
+      <!-- Range -->
+      <label for="satisfaction">Satisfaction (1–10):</label>
+      <input type="range" id="satisfaction" name="satisfaction" min="1" max="10" value="5">
+      <span id="rangeValue">5</span>
+
+      <!-- Color -->
+      <label for="favcolor">Favorite Color:</label>
+      <input type="color" id="favcolor" name="favcolor">
+
+      <!-- Radio Buttons -->
+      <label>Gender:</label>
+      <div class="radio-group">
+        <label><input type="radio" name="gender" value="Male"> Male</label>
+        <label><input type="radio" name="gender" value="Female"> Female</label>
+        <label><input type="radio" name="gender" value="Other"> Other</label>
+      </div>
+
+      <!-- Checkbox -->
+      <label>Interests:</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="interest" value="Music"> Music</label>
+        <label><input type="checkbox" name="interest" value="Sports"> Sports</label>
+        <label><input type="checkbox" name="interest" value="Travel"> Travel</label>
+      </div>
+
+      <!-- Select -->
+      <label for="country">Country:</label>
+      <select id="country" name="country">
+        <option value="">-- Select --</option>
+        <option value="USA">USA</option>
+        <option value="Canada">Canada</option>
+        <option value="UK">UK</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <!-- File -->
+      <label for="file">Upload Profile Photo:</label>
+      <input type="file" id="file" name="file">
+
+      <!-- Textarea -->
+      <label for="message">Tell us about yourself:</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <!-- Buttons -->
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
